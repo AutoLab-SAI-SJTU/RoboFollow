@@ -1,0 +1,86 @@
+{
+  "pickup_red_cylinder": [
+    "Use your left arm to pick up the larger red object.",
+    "Use your left arm to grasp the larger red object.",
+    "Grab the larger red object using your left arm.",
+    "Use your left arm to pick up the red cylinder.",
+    "Use your left arm to grasp the red cylinder."
+  ],
+  "pickup_left_cube": [
+    "Use your left arm to pick up the leftmost cube.",
+    "Use your left arm to grasp the cube that is leftmost.",
+    "Among the cubes, use your left arm to pick up the one on the left."
+  ],
+  "pickup_right_cube": [
+    "Use your left arm to pick up the rightmost cube.",
+    "Grasp the cube that is rightmost, using your left arm.",
+    "Among the cubes, use your left arm to pick up the one on the right."
+  ],
+  "pickup_blue_cylinder": [
+    "Pick up the smaller blue object using your left arm.",
+    "Use your left arm to grasp the smaller blue object.",
+    "Use your left arm to grab the smaller blue object.",
+    "Use your left arm to pick up the blue cylinder.",
+    "Use your left arm to grasp the blue cylinder."
+  ],
+  "stack_left_cube_on_red_cylinder": [
+    "Use your left arm to stack the leftmost cube onto the larger red object.",
+    "Use your left arm to place the left cube on top of the larger red object.",
+    "Put the leftmost cube on the larger red object using your left arm."
+  ],
+  "stack_left_cube_on_blue_cylinder": [
+    "Use your left arm to stack the leftmost cube onto the smaller blue object.",
+    "Use your left arm to place the left cube on top of the smaller blue object.",
+    "Put the leftmost cube on the smaller blue object using your left arm."
+  ],
+  "stack_blue_cylinder_on_left_cube": [
+    "Use your left arm to stack the blue cylinder onto the leftmost cube.",
+    "Use your left arm to place the blue cylinder on top of the left cube.",
+    "Put the blue cylinder on the leftmost cube using your left arm."
+  ],
+  "stack_blue_cylinder_on_right_cube": [
+    "Use your left arm to stack the blue cylinder onto the rightmost cube.",
+    "Use your left arm to place the blue cylinder on top of the right cube.",
+    "Put the blue cylinder on the rightmost cube using your left arm."
+  ],
+  "push_left_cube_to_red_cylinder": [
+    "Use your left arm to push the leftmost cube towards the larger red object.",
+    "Use your left arm to push the left cube in the direction of the larger red object.",
+    "Push the leftmost cube towards the larger red object using your left arm."
+  ],
+  "push_left_cube_to_blue_cylinder": [
+    "Use your left arm to push the leftmost cube towards the smaller blue object.",
+    "Use your left arm to push the left cube in the direction of the smaller blue object.",
+    "Push the leftmost cube towards the smaller blue object using your left arm."
+  ],
+  "push_red_cylinder_to_left_cube": [
+    "Use your left arm to push the red cylinder towards the leftmost cube.",
+    "Use your left arm to push the red cylinder in the direction of the left cube.",
+    "Push the red cylinder towards the leftmost cube using your left arm."
+  ],
+  "push_red_cylinder_to_right_cube": [
+    "Use your left arm to push the red cylinder towards the rightmost cube.",
+    "Use your left arm to push the red cylinder in the direction of the right cube.",
+    "Push the red cylinder towards the rightmost cube using your left arm."
+  ],
+  "place_right_cube_in_green_bowl": [
+    "Use your right arm to pick up the rightmost cube and place it in the green bowl.",
+    "Use your right arm to grasp the right cube and move it into the green bowl.",
+    "Pick up the rightmost cube and put it in the green bowl using your right arm."
+  ],
+  "place_right_cube_in_yellow_bowl": [
+    "Use your right arm to pick up the rightmost cube and place it in the yellow bowl.",
+    "Use your right arm to grasp the right cube and move it into the yellow bowl.",
+    "Pick up the right cube and put it in the yellow bowl using your right arm."
+  ],
+  "place_blue_cylinder_in_green_bowl": [
+    "Use your right arm to pick up the smaller blue object and place it in the green bowl.",
+    "Use your right arm to grasp the smaller blue object and move it into the green bowl.",
+    "Pick up the smaller blue object and put it in the green bowl using your right arm."
+  ],
+  "place_blue_cylinder_in_yellow_bowl": [
+    "Use your right arm to pick up the smaller blue object and place it in the yellow bowl.",
+    "Use your right arm to grasp the smaller blue object and move it into the yellow bowl.",
+    "Pick up the smaller blue object and put it in the yellow bowl using your right arm."
+  ]
+}

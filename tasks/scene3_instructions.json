@@ -1,0 +1,82 @@
+{
+  "r_pick2_via4_to6_short_front": [
+    "Use your right arm to pick up the red slab, pass over the yellow slab, and place it on the blue square label with the short side facing front.",
+    "Pick up the red slab with your right arm, move above the yellow slab, then place it on the blue square label, short side facing front.",
+    "Move the red slab over the yellow slab to the blue square label using your right arm, with the short side facing front."
+  ],
+  "r_pick2_via4_to6_long_front": [
+    "Use your right arm to pick up the red slab, pass over the yellow slab, and place it on the blue square label with the long side facing front.",
+    "Pick up the red slab with your right arm, move above the yellow slab, then place it on the blue square label, long side facing front.",
+    "Move the red slab over the yellow slab to the blue square label using your right arm, with the long side facing front."
+  ],
+  "r_pick2_via5_to6_short_front": [
+    "Use your right arm to pick up the red slab, pass over the blue slab, and place it on the blue square label with the short side facing front.",
+    "Pick up the red slab with your right arm, move above the blue slab, then place it on the blue square label, short side facing front.",
+    "Move the red slab over the blue slab to the blue square label using your right arm, with the short side facing front."
+  ],
+  "r_pick2_via5_to6_long_front": [
+    "Use your right arm to pick up the red slab, pass over the blue slab, and place it on the blue square label with the long side facing front.",
+    "Pick up the red slab with your right arm, move above the blue slab, then place it on the blue square label, long side facing front.",
+    "Move the red slab over the blue slab to the blue square label using your right arm, with the long side facing front."
+  ],
+  "r_pick3_via4_to6_short_front": [
+    "Use your right arm to pick up the green slab, pass over the yellow slab, and place it on the blue square label with the short side facing front.",
+    "Pick up the green slab with your right arm, move above the yellow slab, then place it on the blue square label, short side facing front.",
+    "Move the green slab over the yellow slab to the blue square label using your right arm, with the short side facing front."
+  ],
+  "r_pick3_via4_to6_long_front": [
+    "Use your right arm to pick up the green slab, pass over the yellow slab, and place it on the blue square label with the long side facing front.",
+    "Pick up the green slab with your right arm, move above the yellow slab, then place it on the blue square label, long side facing front.",
+    "Move the green slab over the yellow slab to the blue square label using your right arm, with the long side facing front."
+  ],
+  "r_pick3_via5_to6_short_front": [
+    "Use your right arm to pick up the green slab, pass over the blue slab, and place it on the blue square label with the short side facing front.",
+    "Pick up the green slab with your right arm, move above the blue slab, then place it on the blue square label, short side facing front.",
+    "Move the green slab over the blue slab to the blue square label using your right arm, with the short side facing front."
+  ],
+  "r_pick3_via5_to6_long_front": [
+    "Use your right arm to pick up the green slab, pass over the blue slab, and place it on the blue square label with the long side facing front.",
+    "Pick up the green slab with your right arm, move above the blue slab, then place it on the blue square label, long side facing front.",
+    "Move the green slab over the blue slab to the blue square label using your right arm, with the long side facing front."
+  ],
+  "l_pick5_around2_to1_short_right": [
+    "Use your left arm to pick up the blue slab, avoid passing over the red slab, and place it on the green square label with the short side facing right.",
+    "Pick up the blue slab with your left arm, do not pass over the red slab, detour to avoid passing over it, then place it on the green square label, short side facing right.",
+    "Move the blue slab while avoiding passing over the red slab, then place it on the green square label with the short side facing right."
+  ],
+  "l_pick5_around2_to1_long_right": [
+    "Use your left arm to pick up the blue slab, avoid passing over the red slab, and place it on the green square label with the long side facing right.",
+    "Pick up the blue slab with your left arm, do not pass over the red slab, detour to avoid passing over it, then place it on the green square label, long side facing right.",
+    "Move the blue slab while avoiding passing over the red slab, then place it on the green square label with the long side facing right."
+  ],
+  "l_pick5_around3_to1_short_right": [
+    "Use your left arm to pick up the blue slab, avoid passing over the green slab, and place it on the green square label with the short side facing right.",
+    "Pick up the blue slab with your left arm, do not pass over the green slab, detour to avoid passing over it, then place it on the green square label, short side facing right.",
+    "Move the blue slab while avoiding passing over the green slab, then place it on the green square label with the short side facing right."
+  ],
+  "l_pick5_around3_to1_long_right": [
+    "Use your left arm to pick up the blue slab, avoid passing over the green slab, and place it on the green square label with the long side facing right.",
+    "Pick up the blue slab with your left arm, do not pass over the green slab, detour to avoid passing over it, then place it on the green square label, long side facing right.",
+    "Move the blue slab while avoiding passing over the green slab, then place it on the green square label with the long side facing right."
+  ],
+  "l_pick4_around2_to1_short_right": [
+    "Use your left arm to pick up the yellow slab, avoid passing over the red slab, and place it on the green square label with the short side facing right.",
+    "Pick up the yellow slab with your left arm, do not pass over the red slab, detour to avoid passing over it, then place it on the green square label, short side facing right.",
+    "Move the yellow slab while avoiding passing over the red slab, then place it on the green square label with the short side facing right."
+  ],
+  "l_pick4_around2_to1_long_right": [
+    "Use your left arm to pick up the yellow slab, avoid passing over the red slab, and place it on the green square label with the long side facing right.",
+    "Pick up the yellow slab with your left arm, do not pass over the red slab, detour to avoid passing over it, then place it on the green square label, long side facing right.",
+    "Move the yellow slab while avoiding passing over the red slab, then place it on the green square label with the long side facing right."
+  ],
+  "l_pick4_around3_to1_short_right": [
+    "Use your left arm to pick up the yellow slab, avoid passing over the green slab, and place it on the green square label with the short side facing right.",
+    "Pick up the yellow slab with your left arm, do not pass over the green slab, detour to avoid passing over it, then place it on the green square label, short side facing right.",
+    "Move the yellow slab while avoiding passing over the green slab, then place it on the green square label with the short side facing right."
+  ],
+  "l_pick4_around3_to1_long_right": [
+    "Use your left arm to pick up the yellow slab, avoid passing over the green slab, and place it on the green square label with the long side facing right.",
+    "Pick up the yellow slab with your left arm, do not pass over the green slab, detour to avoid passing over it, then place it on the green square label, long side facing right.",
+    "Move the yellow slab while avoiding passing over the green slab, then place it on the green square label with the long side facing right."
+  ]
+}

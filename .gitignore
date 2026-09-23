@@ -1,0 +1,33 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+
+# Generated datasets, checkpoints, and evaluation artifacts
+/data/
+/datasets/
+/checkpoints/
+/weights/
+/results/
+/eval_results/
+/videos/
+/logs/
+/cache/
+*.log
+
+# Local website and poster build tools
+/publication/

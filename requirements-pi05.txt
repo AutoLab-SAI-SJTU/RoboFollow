@@ -1,0 +1,3 @@
+-r requirements-core.txt
+# The vendored OpenPI PyTorch model imports pytest even on the JAX import path.
+pytest>=8.3.4,<9

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "target": "objects/002_bowl/visual/base1.glb",
+      "replacement": "002_bowl/visual/base1.glb",
+      "color": "yellow",
+      "original_sha256": "c83390c30c350aae6abf66874ad39c4b7240a6bbc01753648842249e40cf6bfe",
+      "replacement_sha256": "efa6b89d50600736bd4b29d7397aa8694a0c816e67a118c40e5ac572a89e2e08",
+      "bytes": 509500
+    },
+    {
+      "target": "objects/002_bowl/visual/base3.glb",
+      "replacement": "002_bowl/visual/base3.glb",
+      "color": "green",
+      "original_sha256": "f99e9609f59b3a560dc3bef52551fb9346d291aaeea13e65e2af3f034029712b",
+      "replacement_sha256": "939eecfc90d3d3ae1df7fe2d2edaa388e1fde63e246c27e9ef85f7093ecb1000",
+      "bytes": 509504
+    }
+  ]
+}

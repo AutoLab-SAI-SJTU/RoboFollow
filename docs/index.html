@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="RoboFollow makes language necessary: a diagnostic benchmark exposing the instruction-following gap in embodied agents through high-entropy scenes and L0–L3 evaluation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrc-crm.github.io/RoboFollow/">
+  <link rel="canonical" href="https://mrc-crm.github.io/RoboFollow/">
+  <meta property="og:title" content="RoboFollow — Unveiling the Instruction Following Mirage in Embodied Agents">
+  <meta property="og:description" content="Same scene. Different instructions. Does the robot really follow? Explore the benchmark, nine evaluated policies, and the gap beyond in-distribution success.">
+  <meta property="og:image" content="https://mrc-crm.github.io/RoboFollow/assets/figures/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>RoboFollow · Instruction Following in Embodied Agents</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="assets/data/results.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#" aria-label="RoboFollow home"><img src="assets/favicon.svg" alt="" width="30" height="30">RoboFollow<span class="wordmark-dot">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#benchmark">Benchmark</a><a href="#results">Results</a><a href="#findings">Findings</a>
+        <a class="nav-paper" href="https://arxiv.org/abs/2609.25636" data-link="paper">Read the paper <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="paper-title">
+      <div class="eyebrow"><span class="status-dot"></span> LANGUAGE · GROUNDING · ACTION</div>
+      <h1 id="paper-title"><span class="hero-name">RoboFollow<span>.</span></span><span class="paper-title">Unveiling the Instruction Following<br class="desktop-break"> Mirage in Embodied Agents</span></h1>
+      <div class="authors">Chang Guo<sup>1</sup><span>·</span> Yukun Xie<sup>1</sup><span>·</span> Bohan Tan<sup>1</sup><span>·</span> Zheng Chang<sup>1</sup><span>·</span> Zhaokai Yin<sup>1</sup><span class="mobile-author-dot">·</span><br class="desktop-break"> Qianli Ma<sup>1</sup><span>·</span> Yingqiao Wang<sup>1</sup><span>·</span> Chao Liang<sup>2</sup><span>·</span> <a href="mailto:zhipengzhang@sjtu.edu.cn" data-link="contact">Zhipeng Zhang<sup>1,†</sup></a></div>
+      <p class="affiliations"><sup>1</sup> AutoLab, School of Artificial Intelligence, Shanghai Jiao Tong University<br><sup>2</sup> Research Lab, Anyverse Dynamics <span class="corresponding">† Corresponding author</span></p>
+      <div class="resource-buttons">
+        <a class="button primary" href="https://arxiv.org/abs/2609.25636" data-link="paper"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12V7zM14 3v5h4M9 12h6M9 16h6"/></svg>Paper <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://github.com/AutoLab-SAI-SJTU/RoboFollow" data-link="code"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg>Code</a>
+        <a class="button" href="https://huggingface.co/datasets/AutoLab-SJTU/robofollow-data" data-link="dataset"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg>Dataset</a>
+      </div>
+
+      <div class="hero-story">
+        <div class="hero-thesis">
+          <span class="section-kicker">THE INSTRUCTION-FOLLOWING MIRAGE</span>
+          <h2>A successful action<br>is only <em>half the story.</em></h2>
+          <p>When a scene suggests only one task, a robot can succeed while barely using language. RoboFollow asks what happens when the <strong>same scene supports different intentions.</strong></p>
+          <a class="text-link" href="#benchmark">Make language necessary <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="intent-demo">
+          <div class="demo-topline"><span class="small-label">ONE SCENE. MULTIPLE VALID TASKS.</span><span class="demo-tag">Try it</span></div>
+          <div class="scene-viewport">
+            <img src="assets/figures/robot-scene.webp" alt="A dual-arm robot above a tabletop with three yellow blocks, a red sphere, a green sphere, and a red cylinder." width="692" height="518" fetchpriority="high">
+            <div class="target-highlight" id="target-highlight" aria-hidden="true"><span>target</span></div>
+            <div class="scene-label">Same visual observation</div>
+          </div>
+          <div class="instruction-options" role="group" aria-label="Choose an illustrative instruction">
+            <button class="instruction active" type="button" data-intent="right" aria-pressed="true"><span class="instruction-letter">A</span><span>Pick up the block <strong>to the right of</strong> the red ball.</span><span class="instruction-arrow" aria-hidden="true">↗</span></button>
+            <button class="instruction" type="button" data-intent="behind" aria-pressed="false"><span class="instruction-letter">B</span><span>Pick up the block <strong>behind</strong> the red ball.</span><span class="instruction-arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <p class="demo-caption" id="intent-caption" aria-live="polite">Instruction A selects the lower-right yellow block. Illustrative target highlighting on a scene from the paper.</p>
+        </div>
+      </div>
+
+      <div class="stats" aria-label="Benchmark at a glance">
+        <div><strong>4</strong><span>diagnostic scene families</span></div>
+        <div><strong>75</strong><span>training task labels</span></div>
+        <div><strong>3,750</strong><span>training demonstrations</span></div>
+        <div><strong>9</strong><span>VLA &amp; WAM policies</span></div>
+      </div>
+    </section>
+
+    <section class="abstract-section container" aria-labelledby="abstract-title">
+      <div class="section-heading"><span class="section-index">01 / THE IDEA</span><h2 id="abstract-title">Make language<br><em>necessary.</em></h2></div>
+      <div class="abstract-copy"><p class="lead">High task success does not necessarily imply instruction following.</p><p>RoboFollow is a diagnostic benchmark built on RoboTwin. Each training scene supports multiple feasible task branches, so the observation alone cannot identify the intended behavior. A four-level protocol isolates visual grounding, semantic recombination, and their combination. Stage-wise <strong>Intent</strong> and <strong>Execution</strong> scores distinguish task-selection errors from motor failures.</p><p>Across nine fine-tuned VLA and WAM policies, strong in-distribution performance, where attained, does not reliably transfer to the perturbed settings. Stronger VLM backbones, QA co-training, LangForce, and classifier-free guidance do not close this gap in the evaluated configurations.</p>
+      <div class="entropy-note"><div class="formula">H<sub>scene</sub> = H<sub>train</sub>(T | S)</div><p><strong>3.782 bits</strong> in RoboFollow <span>vs.</span> <strong>0.880 bits</strong> in the equally weighted LIBERO Spatial/Object/Goal/Long suites. Scene entropy is a dataset design measure; see the paper for task grouping.</p></div></div>
+    </section>
+
+    <section class="benchmark-section section-tint" id="benchmark" aria-labelledby="benchmark-title">
+      <div class="container">
+        <div class="section-top"><div><span class="section-index">02 / THE BENCHMARK</span><h2 id="benchmark-title">Four ways to test<br><em>what language means.</em></h2></div><p>Simple objects. Familiar motor primitives.<br>Multiple possible intentions.</p></div>
+        <div class="scene-tabs" role="tablist" aria-label="Diagnostic scenes">
+          <button id="tab-scene-1" class="scene-tab active" role="tab" aria-selected="true" aria-controls="scene-panel-1" tabindex="0" data-scene="1"><span>01</span>Spatial relations</button>
+          <button id="tab-scene-2" class="scene-tab" role="tab" aria-selected="false" aria-controls="scene-panel-2" tabindex="-1" data-scene="2"><span>02</span>Object attributes</button>
+          <button id="tab-scene-3" class="scene-tab" role="tab" aria-selected="false" aria-controls="scene-panel-3" tabindex="-1" data-scene="3"><span>03</span>Motion constraints</button>
+          <button id="tab-scene-4" class="scene-tab" role="tab" aria-selected="false" aria-controls="scene-panel-4" tabindex="-1" data-scene="4"><span>04</span>Logical grounding</button>
+        </div>
+        <div class="scene-panel" id="scene-panel-1" role="tabpanel" aria-labelledby="tab-scene-1" tabindex="0">
+          <div class="scene-description"><h3>Which object does the relation identify?</h3><p>Identical yellow blocks must be distinguished by their relation to anchor objects. Moving the anchors tests grounding beyond memorized coordinates.</p><span class="scene-pill">Spatial prepositions · 16 training tasks</span></div>
+          <figure><img src="assets/figures/scene-1.webp" alt="Scene 1 across L0–L3: the target yellow block changes as layouts and relations such as right of the red ball or left of the red cylinder change." width="2277" height="576" loading="lazy"><figcaption>Spatial grounding under controlled layout and instruction changes. Paper, Figure 2. <a class="figure-link" href="assets/figures/scene-1.png" target="_blank" rel="noopener">Open full-size figure ↗</a></figcaption></figure>
+        </div>
+        <div class="scene-panel" id="scene-panel-2" role="tabpanel" aria-labelledby="tab-scene-2" tabindex="0" hidden>
+          <div class="scene-description"><h3>Can the robot compose object attributes?</h3><p>Color, size, shape, and action must be bound together. Shared attributes make any single visual cue insufficient across tasks.</p><span class="scene-pill">Attribute composition · 16 training tasks</span></div>
+          <figure><img src="assets/figures/scene-2.webp" alt="Scene 2 across L0–L3: pick up the rightmost cube versus the red cube, with object locations swapped." width="2166" height="505" loading="lazy"><figcaption>Object attributes and action selection. Paper, Figure 3. <a class="figure-link" href="assets/figures/scene-2.png" target="_blank" rel="noopener">Open full-size figure ↗</a></figcaption></figure>
+        </div>
+        <div class="scene-panel" id="scene-panel-3" role="tabpanel" aria-labelledby="tab-scene-3" tabindex="0" hidden>
+          <div class="scene-description"><h3>The route matters as much as the destination.</h3><p>Instructions specify waypoints and final orientations. Reaching a plausible end state is insufficient when the requested procedure is violated.</p><span class="scene-pill">Waypoints &amp; orientation · 16 training tasks</span></div>
+          <figure><img src="assets/figures/scene-3.webp" alt="Scene 3 varies source slabs, intermediate waypoint constraints, destination markers, and final orientations across L0–L3." width="2465" height="752" loading="lazy"><figcaption>Fine-grained action modulation and trajectory constraints. Paper, Figure 4. <a class="figure-link" href="assets/figures/scene-3.png" target="_blank" rel="noopener">Open full-size figure ↗</a></figcaption></figure>
+        </div>
+        <div class="scene-panel" id="scene-panel-4" role="tabpanel" aria-labelledby="tab-scene-4" tabindex="0" hidden>
+          <div class="scene-description"><h3>Observe the state. Choose the right branch.</h3><p>Short instructions probe sequencing, negation, and conditionals. The robot must evaluate the current scene to decide what to do next.</p><span class="scene-pill">First / not / if–else · 27 training tasks</span></div>
+          <figure><img src="assets/figures/scene-4.webp" alt="Scene 4 varies observable bowl contents and spatial conditions to test if–else instructions across L0–L3." width="2616" height="739" loading="lazy"><figcaption>Elementary logical grounding. Paper, Figure 5. <a class="figure-link" href="assets/figures/scene-4.png" target="_blank" rel="noopener">Open full-size figure ↗</a></figcaption></figure>
+        </div>
+        <noscript><p>All scene figures: <a href="assets/figures/scene-2.png">Scene 2</a>, <a href="assets/figures/scene-3.png">Scene 3</a>, <a href="assets/figures/scene-4.png">Scene 4</a>.</p></noscript>
+
+        <div class="protocol-metrics">
+          <div class="protocol-block"><span class="small-label">L0–L3 / CONTROLLED GENERALIZATION</span><h3>Change the layout.<br>Change the meaning.</h3>
+            <div class="protocol-grid" aria-label="Evaluation protocol: rows vary semantics; columns vary visual layout">
+              <div class="protocol-cell"><b>L0</b><strong>In distribution</strong><span>Familiar layout<br>Familiar composition</span></div>
+              <div class="protocol-cell"><b>L1</b><strong>Visual grounding</strong><span>Changed layout<br>Familiar composition</span></div>
+              <div class="protocol-cell"><b>L2</b><strong>Semantic recombination</strong><span>Familiar layout<br>New composition</span></div>
+              <div class="protocol-cell"><b>L3</b><strong>Joint generalization</strong><span>Changed layout<br>New composition</span></div>
+            </div><p class="fine-print">The levels isolate different generalization dimensions; they are not a strict difficulty ranking.</p>
+          </div>
+          <div class="metrics-block"><span class="small-label">STAGE-WISE / INTENT &amp; EXECUTION</span><h3>Did it choose correctly?<br>Did it execute successfully?</h3>
+            <div class="metric-explainer"><span class="metric-code">IS</span><div><h4>Intent Score</h4><p>The correct object, relation, waypoint, orientation, or logical branch was selected.</p></div></div>
+            <div class="metric-explainer"><span class="metric-code">ES</span><div><h4>Execution Score</h4><p>The corresponding physical subgoal was completed successfully.</p></div></div>
+            <div class="metric-explainer"><span class="metric-code">CR</span><div><h4>Completion Rate</h4><p>An action-dependent binary completion criterion, averaged equally over tasks within each scene and level.</p></div></div>
+            <p class="fine-print">A finishing stage contributes 20% of IS/ES and checks that the robot stops unrelated actions after completing the instruction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section container" id="results" aria-labelledby="results-title">
+      <div class="section-top"><div><span class="section-index">03 / THE EVIDENCE</span><h2 id="results-title">The gap appears<br><em>beyond the familiar.</em></h2></div><p>Nine policies. Four scene families.<br>Explore the results from Table 1.</p></div>
+      <div class="result-controls">
+        <label>Metric<select id="metric-select"><option value="IS">Intent Score (IS)</option><option value="ES">Execution Score (ES)</option><option value="CR">Completion Rate (CR)</option></select></label>
+        <label>Scene<select id="scene-select"><option value="mean">Mean over four scenes</option><option value="S1">Scene 1 · Spatial relations</option><option value="S2">Scene 2 · Object attributes</option><option value="S3">Scene 3 · Motion constraints</option><option value="S4">Scene 4 · Logical grounding</option></select></label>
+        <label>Highlighted policy<select id="model-select"><option value="PI05">π₀.₅</option><option value="PI0">π₀</option><option value="GROOT N1.6">GR00T N1.6</option><option value="OpenVLA-OFT">OpenVLA-OFT</option><option value="XVLA">XVLA</option><option value="ACoT-VLA">ACoT-VLA</option><option value="Lingbot-VLA">Lingbot-VLA</option><option value="MOTUS">Motus</option><option value="FASTWAM">FAST-WAM</option></select></label>
+      </div>
+      <div class="result-display">
+        <div class="chart-wrap"><div class="chart-legend"><span class="legend-selected">Selected policy</span><span class="legend-other">Other evaluated policies</span><span class="legend-control">π₀.₅ empty-language control</span></div><div id="results-chart"><img src="assets/figures/results-default.svg" alt="Intent Score averaged over four scenes: pi 0.5 falls from 92.1 at L0 to 56.0 at L1, 38.5 at L2, and 36.1 at L3. The other evaluated policies also decline relative to L0." width="800" height="400"></div></div>
+        <aside class="result-callout" aria-live="polite" aria-atomic="true"><span id="result-model" class="small-label">π₀.₅ · INTENT SCORE</span><div class="score-comparison"><div><span>L0</span><strong id="score-l0">92.1<span>%</span></strong></div><span class="score-arrow" aria-hidden="true">↘</span><div><span>L3</span><strong id="score-l3">36.1<span>%</span></strong></div></div><p id="score-drop"><strong>55.9 percentage points</strong> lower at L3.</p><p id="score-context" class="fine-print">Unweighted mean over four scenes, calculated from the rounded values in Table 1.</p></aside>
+      </div>
+      <p class="result-note">All values are percentages. The dashed control is the π₀.₅ empty-language condition. Results characterize the evaluated fine-tuning setup; they do not isolate architecture from training data or optimization.</p>
+      <details class="results-table-details" open><summary>View the numbers <span>All nine policies + language ablation</span></summary><div class="table-scroll"><table id="results-table"><caption>Intent Score (%) · unweighted mean over four scenes</caption><thead><tr><th scope="col">Policy</th><th scope="col">Family</th><th scope="col">L0</th><th scope="col">L1</th><th scope="col">L2</th><th scope="col">L3</th></tr></thead><tbody id="results-table-body"><tr class="selected"><th scope="row">π₀.₅</th><td>VLA</td><td>92.1</td><td>56.0</td><td>38.5</td><td>36.1</td></tr>
+<tr class="control"><th scope="row">π₀.₅ · empty language</th><td>Control</td><td>14.9</td><td>8.0</td><td>14.3</td><td>12.0</td></tr>
+<tr class=""><th scope="row">π₀</th><td>VLA</td><td>93.6</td><td>43.5</td><td>26.7</td><td>29.8</td></tr>
+<tr class=""><th scope="row">GR00T N1.6</th><td>VLA</td><td>64.1</td><td>22.4</td><td>22.3</td><td>22.0</td></tr>
+<tr class=""><th scope="row">OpenVLA-OFT</th><td>VLA</td><td>17.5</td><td>10.0</td><td>6.1</td><td>9.1</td></tr>
+<tr class=""><th scope="row">XVLA</th><td>VLA</td><td>66.5</td><td>9.1</td><td>31.3</td><td>30.3</td></tr>
+<tr class=""><th scope="row">ACoT-VLA</th><td>VLA</td><td>92.7</td><td>46.5</td><td>39.4</td><td>35.5</td></tr>
+<tr class=""><th scope="row">Lingbot-VLA</th><td>VLA</td><td>78.8</td><td>10.2</td><td>27.1</td><td>24.8</td></tr>
+<tr class=""><th scope="row">Motus</th><td>WAM</td><td>67.7</td><td>29.7</td><td>24.1</td><td>25.8</td></tr>
+<tr class=""><th scope="row">FAST-WAM</th><td>WAM</td><td>79.0</td><td>25.4</td><td>22.4</td><td>30.4</td></tr></tbody></table></div><a class="text-link" href="assets/data/results.csv" download>Download all Table 1 data (CSV) <span aria-hidden="true">↓</span></a></details>
+    </section>
+
+    <section class="findings-section section-dark" id="findings" aria-labelledby="findings-title"><div class="container">
+      <span class="section-index">04 / THE DIAGNOSIS</span><h2 id="findings-title">Understanding a scene<br>does not guarantee <em>following an instruction.</em></h2>
+      <div class="findings-grid"><article><span class="finding-number">01</span><h3>Visual shortcuts break.</h3><p>In Scene 1, π₀ reaches <strong>98.2% IS at L0</strong> but <strong>0.0% at L1</strong> after layout changes. Task success on a familiar scene can conceal fragile spatial grounding.</p></article><article><span class="finding-number">02</span><h3>Better QA is insufficient.</h3><p>Qwen3-VL-4B answers <strong>19/20</strong> Scene 2 QA probes correctly. Yet the tested stronger-backbone and QA co-training setup still leaves substantial L1–L3 action-grounding failures.</p></article><article><span class="finding-number">03</span><h3>The tested fixes leave a gap.</h3><p>LangForce yields marginal changes; classifier-free guidance at scales <strong>1.2 and 1.5</strong> degrades even L0. These mitigations do not resolve generalization in the tested configurations.</p></article></div>
+      <details class="failure-details"><summary>Inspect representative failure cases <span>Paper · Figure 7</span></summary><figure><a href="assets/figures/failure-cases.png" target="_blank" rel="noopener"><img src="assets/figures/failure-cases.png" alt="Nine annotated failure cases: kinematic execution, spatial relations, attribute composition, trajectory constraints, conditionals, unintended actions, negation, sequencing, and orientation." width="1584" height="980" loading="lazy"></a><figcaption>Failure cases reproduced from the paper. Select the figure to view it at full size.</figcaption></figure></details>
+      <div class="real-robot"><figure><img src="assets/figures/real-robot.webp" alt="Two real-robot views of a gripper manipulating red and blue geometric objects." width="722" height="342" loading="lazy"><figcaption>Real-robot pilot · π₀.₅ · paper, Figure 6</figcaption></figure><div><span class="small-label">A PRELIMINARY REAL-WORLD CHECK</span><h3>From training instructions<br>to held-out compositions.</h3><div class="pilot-scores"><div><strong>50<span>%</span></strong><span>Training instructions · 20/40</span></div><span aria-hidden="true">→</span><div><strong>15<span>%</span></strong><span>Held-out instructions · 6/40</span></div></div><p>Eight instructions per set, five trials each, using the same object set. This small pilot compares different instruction sets and pick/stack compositions; it is not a matched-pair study.</p></div></div>
+    </div></section>
+
+    <section class="resources-section container" id="resources" aria-labelledby="resources-title">
+      <div class="section-top"><div><span class="section-index">05 / BUILD ON ROBOFOLLOW</span><h2 id="resources-title">Evaluate instructions.<br><em>Through action.</em></h2></div><a class="button primary" href="https://github.com/AutoLab-SAI-SJTU/RoboFollow" data-link="code">Explore the benchmark <span aria-hidden="true">↗</span></a></div>
+      <div class="download-grid"><a href="https://arxiv.org/abs/2609.25636" data-link="paper"><span>01 / PAPER</span><strong>Read the paper <span aria-hidden="true">↗</span></strong><p>Methods, full results, and diagnostic details.</p></a><a href="https://huggingface.co/datasets/AutoLab-SJTU/robofollow-data" data-link="dataset"><span>02 / DATASET</span><strong>Get the demonstrations <span aria-hidden="true">↗</span></strong><p>Training data for language-conditioned manipulation.</p></a></div>
+      <div class="citation"><div class="citation-heading"><h3>Citation</h3><button type="button" id="copy-citation" class="copy-button">Copy BibTeX</button></div><pre id="bibtex">@misc{guo2026robofollow,
+  title = {RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents},
+  author = {Guo, Chang and Xie, Yukun and Tan, Bohan and Chang, Zheng and Yin, Zhaokai and Ma, Qianli and Wang, Yingqiao and Liang, Chao and Zhang, Zhipeng},
+  year = {2026},
+  eprint = {2609.25636},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2609.25636}
+}</pre><p id="copy-status" role="status" class="fine-print"></p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><a class="wordmark" href="#">RoboFollow<span class="wordmark-dot">.</span></a><p>AutoLab · Shanghai Jiao Tong University</p><a href="mailto:zhipengzhang@sjtu.edu.cn" data-link="contact">Contact <span aria-hidden="true">↗</span></a></div></footer>
+</body>
+</html>

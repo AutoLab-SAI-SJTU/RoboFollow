@@ -1,0 +1,137 @@
+{
+  "s41_l_pick_cube_in_bowl": [
+    "Use your left arm to pick up the cube inside the bowl.",
+    "Using your left arm, pick up the cube inside the bowl.",
+    "Pick up the cube inside the bowl with your left arm."
+  ],
+  "s41_l_pick_yellow_cylinder": [
+    "Use your left arm to pick up the yellow cylinder.",
+    "Using your left arm, pick up the yellow cylinder.",
+    "Pick up the yellow cylinder with your left arm."
+  ],
+  "s41_r_pick_green_cylinder_top": [
+    "Use your right arm to pick up the green cylinder on the right cube.",
+    "Using your right arm, pick up the green cylinder that is on the right cube.",
+    "Pick up the green cylinder on the right cube with your right arm."
+  ],
+  "s41_l_pick_blue_sphere": [
+    "Use your left arm to pick up the blue sphere.",
+    "Using your left arm, pick up the blue sphere.",
+    "Pick up the blue sphere with your left arm."
+  ],
+  "s41_l_pick_red_sphere": [
+    "Use your left arm to pick up the red sphere.",
+    "Using your left arm, pick up the red sphere.",
+    "Pick up the red sphere with your left arm."
+  ],
+  "s41_r_unstack_green_cylinder_to_slot6": [
+    "Use your right arm to take the cylinder off the right cube and place it to the right of the red sphere.",
+    "Using your right arm, remove the cylinder from the top of the right cube and put it to the right of the red sphere.",
+    "Take the cylinder from the right cube and place it to the right of the red sphere with your right arm."
+  ],
+  "s41_r_stack_green_cylinder_on_yellow": [
+    "Use your right arm to move the cylinder from the right cube onto the yellow cylinder.",
+    "Using your right arm, place the cylinder on the right cube on top of the yellow cylinder.",
+    "Stack the cylinder from the right cube on the yellow cylinder with your right arm."
+  ],
+  "s41_l_pick_blue_not_cube": [
+    "Use your left arm to pick up the blue object that is not a cube.",
+    "Using your left arm, pick up the blue object that is not a cube.",
+    "Pick up the blue object that is not a cube with your left arm."
+  ],
+  "s41_l_pick_red_not_in_bowl": [
+    "Use your left arm to pick up the red object that is not in the bowl.",
+    "Using your left arm, pick up the red object that is not in the bowl.",
+    "Pick up the red object that is not in the bowl with your left arm."
+  ],
+  "s41_l_pick_ball_not_leftmost": [
+    "Use your left arm to pick up the ball that is not in the leftmost position.",
+    "Using your left arm, pick up the ball that is not on the left side.",
+    "Pick up the non-leftmost ball with your left arm."
+  ],
+  "s41_if_bowl_nonempty_then_l_pick_blue_else_r_stack": [
+    "If there is an object in the bowl, use your left arm to pick up the blue sphere; otherwise use your right arm to place the cylinder from the right cube on the yellow cylinder.",
+    "When the bowl contains an object, use your left arm to pick up the blue sphere; otherwise move the cylinder on the right cube onto the yellow cylinder with your right arm.",
+    "Check whether the bowl is non-empty. If yes, pick up the blue sphere with your left arm; if not, stack the cylinder from the right cube on the yellow cylinder with your right arm."
+  ],
+  "s41_if_blue_right_of_red_then_l_pick_else_r_stack": [
+    "If the blue sphere is to the right of the red sphere, use your left arm to pick up the blue sphere; otherwise use your right arm to place the cylinder from the right cube on the yellow cylinder.",
+    "When the blue sphere is on the right side of the red sphere, use your left arm to pick up the blue sphere; otherwise move the cylinder on the right cube onto the yellow cylinder with your right arm.",
+    "Check whether the blue sphere is right of the red sphere. If yes, pick up the blue sphere with your left arm; if not, stack the cylinder from the right cube on the yellow cylinder with your right arm."
+  ],
+  "s41_if_object_on_right_cube_then_r_stack_else_l_pick_blue": [
+    "If there is an object on top of the right cube, use your right arm to place the cylinder from the right cube on the yellow cylinder; otherwise use your left arm to pick up the blue sphere.",
+    "When the right cube has an object on top, use your right arm to move that cylinder onto the yellow cylinder; otherwise pick up the blue sphere with your left arm.",
+    "Check whether the right cube has an object on top. If yes, stack the cylinder from the right cube on the yellow cylinder with your right arm; if not, pick up the blue sphere with your left arm."
+  ],
+  "s41_if_yellow_right_of_green_then_r_stack_else_l_pick_blue": [
+    "If the yellow cylinder is to the right of the green cylinder, use your right arm to place the cylinder from the right cube on the yellow cylinder; otherwise use your left arm to pick up the blue sphere.",
+    "When the yellow cylinder is on the right side of the green cylinder, use your right arm to move the cylinder from the right cube onto the yellow cylinder; otherwise pick up the blue sphere with your left arm.",
+    "Check whether the yellow cylinder is right of the green cylinder. If yes, stack the cylinder from the right cube on the yellow cylinder with your right arm; if not, pick up the blue sphere with your left arm."
+  ],
+  "s41_seq_l_bowl_then_r_green_cylinder": [
+    "First use your left arm to pick up the cube inside the bowl, then use your right arm to pick up the green cylinder.",
+    "Start by picking up the cube inside the bowl with your left arm, then pick up the green cylinder with your right arm.",
+    "Pick up the cube inside the bowl with your left arm before picking up the green cylinder with your right arm."
+  ],
+  "s41_seq_r_green_cylinder_then_l_bowl": [
+    "First use your right arm to pick up the green cylinder, then use your left arm to pick up the cube inside the bowl.",
+    "Start by picking up the green cylinder with your right arm, then pick up the cube inside the bowl with your left arm.",
+    "Pick up the green cylinder with your right arm before picking up the cube inside the bowl with your left arm."
+  ],
+  "s42_l_pick_yellow_cylinder": [
+    "Use your left arm to pick up the yellow cylinder.",
+    "Using your left arm, pick up the yellow cylinder.",
+    "Pick up the yellow cylinder with your left arm."
+  ],
+  "s42_r_unstack_green_cylinder_to_slot6": [
+    "Use your right arm to take the cylinder off the right cube and place it to the right of the blue sphere.",
+    "Using your right arm, remove the cylinder from the top of the right cube and put it at the position right of the blue sphere.",
+    "Take the cylinder from the right cube and place it to the right of the blue sphere with your right arm."
+  ],
+  "s42_r_stack_green_cylinder_on_yellow": [
+    "Use your right arm to move the cylinder from the right cube onto the yellow cylinder.",
+    "Using your right arm, place the cylinder on the right cube on top of the yellow cylinder.",
+    "Stack the cylinder from the right cube on the yellow cylinder with your right arm."
+  ],
+  "s42_if_bowl_nonempty_then_l_pick_blue_else_r_stack": [
+    "If there is an object in the bowl, use your left arm to pick up the blue sphere; otherwise use your right arm to place the cylinder from the right cube on the yellow cylinder.",
+    "When the bowl contains an object, use your left arm to pick up the blue sphere; otherwise move the cylinder on the right cube onto the yellow cylinder with your right arm.",
+    "Check whether the bowl is non-empty. If yes, pick up the blue sphere with your left arm; if not, stack the cylinder from the right cube on the yellow cylinder with your right arm."
+  ],
+  "s42_if_blue_right_of_red_then_l_pick_blue_else_r_stack": [
+    "If the blue sphere is to the right of the red sphere, use your left arm to pick up the blue sphere; otherwise use your right arm to place the cylinder from the right cube on the yellow cylinder.",
+    "When the blue sphere is on the right side of the red sphere, use your left arm to pick up the blue sphere; otherwise move the cylinder on the right cube onto the yellow cylinder with your right arm.",
+    "Check whether the blue sphere is right of the red sphere. If yes, pick up the blue sphere with your left arm; if not, stack the cylinder from the right cube on the yellow cylinder with your right arm."
+  ],
+  "s42_seq_l_red_ball_then_r_green_cylinder": [
+    "First use your left arm to pick up the red sphere, then use your right arm to pick up the green cylinder.",
+    "Start by picking up the red sphere with your left arm, then pick up the green cylinder with your right arm.",
+    "Pick up the red sphere with your left arm before picking up the green cylinder with your right arm."
+  ],
+  "s42_seq_r_green_cylinder_then_l_red_ball": [
+    "First use your right arm to pick up the green cylinder, then use your left arm to pick up the red sphere.",
+    "Start by picking up the green cylinder with your right arm, then pick up the red sphere with your left arm.",
+    "Pick up the green cylinder with your right arm before picking up the red sphere with your left arm."
+  ],
+  "s43_r_unstack_blue_cube_from_yellow_to_slot5": [
+    "Use your right arm to take the cube off the yellow cylinder and place it to the right of the blue sphere.",
+    "Using your right arm, remove the cube from the top of the yellow cylinder and put it at the position right of the blue sphere.",
+    "Take the cube from the yellow cylinder and place it to the right of the blue sphere with your right arm."
+  ],
+  "s43_r_stack_blue_cube_on_right_cylinder": [
+    "Use your right arm to move the cube from the top of the yellow cylinder onto the green cylinder.",
+    "Using your right arm, place the cube on the yellow cylinder on top of the green cylinder.",
+    "Stack the cube from the yellow cylinder on the green cylinder with your right arm."
+  ],
+  "s43_if_bowl_nonempty_then_l_pick_blue_else_r_pick_red": [
+    "If there is an object in the bowl, use your left arm to pick up the blue sphere; otherwise use your right arm to pick up the red sphere.",
+    "When the bowl contains an object, use your left arm to pick up the blue sphere; otherwise pick up the red sphere with your right arm.",
+    "Check whether the bowl is non-empty. If yes, pick up the blue sphere with your left arm; if not, pick up the red sphere with your right arm."
+  ],
+  "s43_r_pick_object_not_touching_table": [
+    "Use your right arm to pick up the object that is not touching the table.",
+    "Using your right arm, pick up the object that is not touching the table.",
+    "Pick up the object that is not touching the table with your right arm."
+  ]
+}

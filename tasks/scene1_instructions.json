@@ -1,0 +1,82 @@
+{
+  "pickup_yellow_block_1_left": [
+    "Use your left arm to pick up the block to the right of the red ball.",
+    "Use your left arm to grasp the block to the right of the red ball.",
+    "Pick up the block to the right of the red ball using your left arm."
+  ],
+  "pickup_yellow_block_1_right": [
+    "Use your right arm to pick up the block to the right of the red ball.",
+    "Use your right arm to grasp the block to the right of the red ball.",
+    "Pick up the block to the right of the red ball using your right arm."
+  ],
+  "pickup_yellow_block_2": [
+    "Use your left arm to pick up the block to the left of the green ball.",
+    "Use your left arm to grasp the block to the left of the green ball.",
+    "Pick up the block to the left of the green ball using your left arm."
+  ],
+  "pickup_yellow_block_3": [
+    "Use your right arm to pick up the block in front of the red cylinder.",
+    "Use your right arm to grasp the block in front of the red cylinder.",
+    "Pick up the block in front of the red cylinder using your right arm."
+  ],
+  "place_yellow_block_1_behind_red_cylinder": [
+    "Use your right arm to pick up the block to the right of the red ball and place it behind the red cylinder.",
+    "Use your right arm to grasp the block to the right of the red ball and put it behind the red cylinder.",
+    "Pick up the block to the right of the red ball and place it behind the red cylinder using your right arm."
+  ],
+  "place_yellow_block_1_beside_red_cylinder": [
+    "Use your right arm to pick up the block to the right of the red ball and place it to the right of the red cylinder.",
+    "Use your right arm to grasp the block to the right of the red ball and put it to the right of the red cylinder.",
+    "Pick up the block to the right of the red ball and place it on the right side of the red cylinder using your right arm."
+  ],
+  "place_yellow_block_1_behind_red_sphere": [
+    "Use your left arm to pick up the block to the right of the red ball and place it behind the red ball.",
+    "Use your left arm to grasp the block to the right of the red ball and put it behind the red ball.",
+    "Pick up the block to the right of the red ball and place it behind the red ball using your left arm."
+  ],
+  "place_yellow_block_1_left_of_red_sphere": [
+    "Use your left arm to pick up the block to the right of the red ball and place it to the left of the red ball.",
+    "Use your left arm to grasp the block to the right of the red ball and put it to the left of the red ball.",
+    "Pick up the block to the right of the red ball and place it on the left side of the red ball using your left arm."
+  ],
+  "place_yellow_block_2_behind_green_sphere": [
+    "Use your left arm to pick up the block to the left of the green ball and place it behind the green ball.",
+    "Use your left arm to grasp the block to the left of the green ball and put it behind the green ball.",
+    "Pick up the block to the left of the green ball and place it behind the green ball using your left arm."
+  ],
+  "place_yellow_block_2_in_front_of_green_sphere": [
+    "Use your left arm to pick up the block to the left of the green ball and place it in front of the green ball.",
+    "Use your left arm to grasp the block to the left of the green ball and put it in front of the green ball.",
+    "Pick up the block to the left of the green ball and place it in front of the green ball using your left arm."
+  ],
+  "place_yellow_block_2_behind_red_sphere": [
+    "Use your left arm to pick up the block to the left of the green ball and place it behind the red ball.",
+    "Use your left arm to grasp the block to the left of the green ball and put it behind the red ball.",
+    "Pick up the block to the left of the green ball and place it behind the red ball using your left arm."
+  ],
+  "place_yellow_block_2_left_of_red_sphere": [
+    "Use your left arm to pick up the block to the left of the green ball and place it to the left of the red ball.",
+    "Use your left arm to grasp the block to the left of the green ball and put it to the left of the red ball.",
+    "Pick up the block to the left of the green ball and place it on the left side of the red ball using your left arm."
+  ],
+  "place_yellow_block_3_behind_red_cylinder": [
+    "Use your right arm to pick up the block in front of the red cylinder and place it behind the red cylinder.",
+    "Use your right arm to grasp the block in front of the red cylinder and put it behind the red cylinder.",
+    "Pick up the block in front of the red cylinder and place it behind the red cylinder using your right arm."
+  ],
+  "place_yellow_block_3_beside_red_cylinder": [
+    "Use your right arm to pick up the block in front of the red cylinder and place it to the right of the red cylinder.",
+    "Use your right arm to grasp the block in front of the red cylinder and put it to the right of the red cylinder.",
+    "Pick up the block in front of the red cylinder and place it on the right side of the red cylinder using your right arm."
+  ],
+  "place_yellow_block_3_behind_green_sphere": [
+    "Use your right arm to pick up the block in front of the red cylinder and place it behind the green ball.",
+    "Use your right arm to grasp the block in front of the red cylinder and put it behind the green ball.",
+    "Pick up the block in front of the red cylinder and place it behind the green ball using your right arm."
+  ],
+  "place_yellow_block_3_in_front_of_green_sphere": [
+    "Use your right arm to pick up the block in front of the red cylinder and place it in front of the green ball.",
+    "Use your right arm to grasp the block in front of the red cylinder and put it in front of the green ball.",
+    "Pick up the block in front of the red cylinder and place it in front of the green ball using your right arm."
+  ]
+}

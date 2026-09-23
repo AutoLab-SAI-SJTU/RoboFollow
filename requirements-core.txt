@@ -1,0 +1,10 @@
+# Simulator dependencies come from the pinned RoboTwin checkout.
+# These are the extra interface/data-tool imports, not a GPU environment lock.
+# Keep the NumPy 1.x ABI used by the reference simulator and OpenPI lock.
+numpy>=1.24,<2
+PyYAML
+h5py
+opencv-python>=4.8,<4.12
+transforms3d
+imageio
+imageio-ffmpeg
